@@ -12,7 +12,7 @@ export default function Sidebar() {
       <button onClick={toggleMenu}>
         <span className="fa fa-align-justify py-8 px-4"></span>
       </button>
-      <div onClick={toggleMenu} className={` ${showMenu? "max-w-[85vw]": "w-4"} flex flex-col w-[80vw] bg-[--color1] text-[--background] `}>
+      <div onClick={toggleMenu} className={` ${showMenu? "max-w-[85vw]": "max-w-4"} overflow-hidden flex flex-col w-[80vw] bg-[--color1] text-[--background] `}>
         <div className="p-4">
           <span className="fa fa-user px-4"></span>About me
         </div>
