@@ -29,3 +29,13 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes show-menu {
+  from {max-width: 5vw;}
+  to {max-width: 85vw;}
+}
+
+@keyframes hide-menu {
+  from {max-width: 85vw;}
+  to {max-width: 5vw;}
+}
