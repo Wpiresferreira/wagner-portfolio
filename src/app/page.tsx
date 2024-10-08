@@ -1,12 +1,17 @@
 import Image from "next/image";
-import Sidebar from "./components/Sidebar"
+import Sidebar from "./components/Sidebar";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-<Sidebar></Sidebar>
+      <a
+        className="h-20 w-72 p-10 bg-slate-50"
+        href="https://react-registration-app-gamma.vercel.app/"
+      >
+        Bow Valley registration App
+      </a>
     </>
-   
   );
 }
 

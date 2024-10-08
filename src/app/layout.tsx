@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import "./styles/font-awesome.css"
+import Sidebar from "./components/Sidebar";
 
 
 const rubik = localFont({
@@ -9,6 +10,7 @@ const rubik = localFont({
   variable: "--font-rubik",
   weight: "300 900",
 })
+
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -35,6 +37,7 @@ export default function RootLayout({
       <body
         className={`${rubik.variable} antialiased`}
       >
+        <Sidebar></Sidebar>
         {children}
       </body>
     </html>
